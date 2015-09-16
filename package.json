@@ -1,0 +1,28 @@
+{
+  "name": "ormdocs",
+  "version": "1.0.0",
+  "description": "documentation for GraphQL ORM",
+  "main": "main.js",
+  "scripts": {
+    "start": "nodemon server/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MattEubanks/ORM-docs.git"
+  },
+  "keywords": [
+    "graphql",
+    "orm",
+    "sql"
+  ],
+  "author": "Matt Ben Ken Enyu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MattEubanks/ORM-docs/issues"
+  },
+  "homepage": "https://github.com/MattEubanks/ORM-docs#readme",
+  "dependencies": {
+    "express": "^4.13.3"
+  }
+}

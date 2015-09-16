@@ -1,0 +1,27 @@
+{
+  "name": "orm docs",
+  "version": "0.0.0",
+  "homepage": "https://github.com/MattEubanks/ORM-docs",
+  "authors": [
+    "MattEubanks <moosefan94@gmail.com>"
+  ],
+  "description": "docs for graphql",
+  "moduleType": [
+    "amd",
+    "globals",
+    "node"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "client/lib",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.4.5",
+    "angular-ui-router": "~0.2.15"
+  }
+}
