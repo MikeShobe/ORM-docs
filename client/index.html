@@ -4,26 +4,19 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>ORM Docs</title>
-        <link href="css/css/bootstrap.min.css" rel="stylesheet">
-        <link href="css/css/simple-sidebar.css" rel="stylesheet">
+        <title>Nala</title>
+        <link href="./lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" type= "text/css">
+        <link href="css/simple-sidebar.css" rel="stylesheet">
+        <link rel="icon" href="css/favicon.ico" type="image/x-icon">
         <base href= "/">
     </head>
+
     <script src="./lib/angular/angular.min.js"></script>
     <script src="./lib/angular-ui-router/release/angular-ui-router.min.js"></script>
     <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script src="css/js/bootstrap.min.js"></script>
     <script src="js/main.js"></script>
     <body ng-app = "main">
-        <div class = "emblemContainer">
-            <div class = 'row'>
-                <div class = 'col-xs-4'>  <img src= "./css/pix/graphql.gif"></div>
-                <div class = 'col-xs-4'>  <h1 style= "color: white">WHATEVER THE FUCK WE NAME THIS</h1></div>
-                <div class = 'col-xs-4'>  <img src= "./css/pix/sql.gif"></div>
-            </div>
-        </div>
         <div id="wrapper">
-            <!-- Sidebar -->
             <div id="sidebar-wrapper">
                 <ul class="sidebar-nav">
                     <li class="sidebar-brand">
@@ -36,22 +29,16 @@
                     </li>
                 </ul>
             </div>
-            <!-- Toggle Button -->
-            <a style= "margin: 15px 0 0 30px" href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Menu</a>
-
             <!--Display the view-->
             <div class="row">
                 <div styling= "padding-left: 0px" class="col-xs-12">
-                    <div ui-view></div>
+                    
+                    <img src="css/nala.png" style="height: 100%; width:100%">
+                    
+                    <div id="pages" ui-view></div>
                 </div>
             </div>
+        </div>
 
-            <!-- jQuery to handle toggle -->
-            <script>
-            $("#menu-toggle").click(function(e) {
-            e.preventDefault();
-            $("#wrapper").toggleClass("toggled");
-            });
-            </script>
         </body>
     </html>
