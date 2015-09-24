@@ -23,7 +23,11 @@ body {
     height: 100%;
     margin-left: -150px;
     overflow-y: auto;
-    background: black;
+    background-color: #6E6E6E;
+    background-image: url(nalaemblem.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: left bottom;
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
@@ -43,7 +47,7 @@ body {
     width: 150px;
     margin: 0;
     padding: 0;
-
+    color: #FF9900;
 }
 
 .sidebar-nav li {
@@ -54,12 +58,13 @@ body {
 .sidebar-nav li a {
     display: block;
     text-decoration: none;
+    color: #FF9900;
 }
 
 .sidebar-nav li a:hover {
     text-decoration: none;
-    color: #FF9900;
-    background: #6E6E6E;
+    color: #FF5A09;
+    background: #393939;
 }
 
 .sidebar-nav > .sidebar-brand {
@@ -69,7 +74,8 @@ body {
 }
 
 .sidebar-nav > .sidebar-brand a:hover {
-    background: #6E6E6E;
+    background: #393939;
+    color: #FF5A09;
 }
 
 #pages{
