@@ -25,20 +25,25 @@
                         </a>
                     </li>
                     <li>
-                        <a ui-sref="documentation">Documentation</a>
+                        <a id="doclink"ui-sref="documentation">Documentation</a>
                     </li>
                 </ul>
             </div>
             <!--Display the view-->
             <div class="row">
-                <div styling= "padding-left: 0px" class="col-xs-12">
-                    
-                    <img src="css/nala.png" style="height: 100%; width:100%">
-                    
+                <div class="col-xs-12">
+                    <img src="css/nala1.png" style="height: 100%; width:100%">
                     <div id="pages" ui-view></div>
                 </div>
             </div>
         </div>
+        <script type="text/javascript">
+        $(document).ready(function() {
+          $('.doclink').click(function() {
+            $('.sub-nav').toggleClass('visible');
+          });
+        });
+        </script>
 
         </body>
     </html>
