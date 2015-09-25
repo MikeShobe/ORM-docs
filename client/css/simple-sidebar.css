@@ -25,6 +25,11 @@ code y{
 code st{
     color: #F3843E;
 }
+
+code func{
+    color: #0070d1;
+}
+
 pre{
     background: #cfcfcf;
 }

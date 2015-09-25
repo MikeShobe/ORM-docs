@@ -9,9 +9,9 @@
 	<div class='col-lg-12 .col-lg-12-offset-4'>
 	  <p id='cen'>Example of a Nala Server</p>
 	  <div class="box">
-	   <pre><code><r>var</r> <y>Nala</y> = require('nala');
-<r>var</r> graphQLHandler = <y>Nala</y>(Schema, 'postgres://localhost/test');
-app.<y>post</y>('/graphql', graphQLHandler);</code></pre>
+	   <pre><code><r>var</r> Nala = require(<func>'nala'</func>);
+<r>var</r> graphQLHandler = <y>Nala</y>(Schema, <func>'postgres://localhost/test'</func>);
+app.<y>post</y>(<func>'/graphql'</func>, <y>graphQLHandler</y>);</code></pre>
 	  </div>
 	</div>
 </div>
@@ -21,11 +21,11 @@ app.<y>post</y>('/graphql', graphQLHandler);</code></pre>
 		<p id='cen'>Example Nala Schema</p>
 		<div class="box">
 			<pre><code><r>var</r> userType = new <y>GraphQLObjectType</y>({
- 	<st>name:</st> 'user',
- 	<st>description:</st> 'this is the user type',
+ 	<st>name:</st> <func>'user'</func>,
+ 	<st>description:</st> <func>'this is the user type'</func>,
  	<st>fields:</st> {
-   	  'name': {type: GraphQLString},
-   	  'age': {type: GraphQLInt}
+   	  <func>'name'</func>: {type: <y>GraphQLString</y>},
+   	  <func>'age'</func>: {type: <y>GraphQLInt</y>}
  	}
 });
 </code></pre>
@@ -37,17 +37,17 @@ app.<y>post</y>('/graphql', graphQLHandler);</code></pre>
 		<p id='cen'>Example Nala Component</p>
 		<div class="box">
 			<pre><code><r>var</r> query = {
-  'query' : `query
-              queryUser($name:String) {
-               getUser(name: $name) {
+  <func>'query'</func> : `query
+              <st>queryUser</st>($name:String) {
+               <st>getUser</st>(name: $name) {
                   name
                   age
                }
              }`,
-  'variables': {'name': this.state.name}
+  <func>'variables'</func> : {<func>'name'</func>: this.state.name}
 }<br/>
 //send it to graphql
-$.post('/graphql', query, function(response){
+$.<y>post</y>(<func>'/graphql'</func>, query, <r>function</r>(response){
  console.dir(response.data);
 });</code></pre>
 	  </div>
