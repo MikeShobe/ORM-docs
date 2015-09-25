@@ -11,7 +11,16 @@ app.all('/', function(req, res, next) {
 app.get('/getstarted', function (req, res){
  res.sendFile(path.join(__dirname, '/../client/index.html'));
 });
-app.get('/crud', function (req, res){
+app.get('/create', function (req, res){
+ res.sendFile(path.join(__dirname, '/../client/index.html'));
+});
+app.get('/retrieve', function (req, res){
+ res.sendFile(path.join(__dirname, '/../client/index.html'));
+});
+app.get('/update', function (req, res){
+ res.sendFile(path.join(__dirname, '/../client/index.html'));
+});
+app.get('/delete', function (req, res){
  res.sendFile(path.join(__dirname, '/../client/index.html'));
 });
 app.get('/addrelations', function (req, res){

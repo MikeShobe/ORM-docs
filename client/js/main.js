@@ -13,9 +13,21 @@
         url: '/getstarted',
         templateUrl: 'partials/getstart.html'
       })
-      .state('crud', {
-        url: '/crud',
-        templateUrl: 'partials/crud.html'
+      .state('create', {
+        url: '/create',
+        templateUrl: 'partials/crud/create.html'
+      })
+      .state('retrieve', {
+        url: '/retrieve',
+        templateUrl: 'partials/crud/retrieve.html'
+      })
+      .state('update', {
+        url: '/update',
+        templateUrl: 'partials/crud/update.html'
+      })
+      .state('delete', {
+        url: '/delete',
+        templateUrl: 'partials/crud/delete.html'
       })
       .state('addrelations', {
         url: '/addrelations',
