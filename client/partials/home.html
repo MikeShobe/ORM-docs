@@ -9,43 +9,47 @@
 	<div class='col-lg-12 .col-lg-12-offset-4'>
 	  <p id='cen'>Example of a Nala Server</p>
 	  <div class="box">
-	    <code><r>var</r> <nal>Nala</nal> = require('nala');<br/>
-				  <r>var</r> graphQLHandler = <nal>Nala</nal>(Schema, 'postgres://localhost/test');<br/>
-				  app.post('/graphql', graphQLHandler);
-		  </code>.
+	   <pre><code><r>var</r> <y>Nala</y> = require('nala');
+<r>var</r> graphQLHandler = <y>Nala</y>(Schema, 'postgres://localhost/test');
+app.<y>post</y>('/graphql', graphQLHandler);</code></pre>
+	  </div>
+	</div>
+</div>
+
+<div class="row">
+	<div class='col-lg-12'>
+		<p id='cen'>Example Nala Schema</p>
+		<div class="box">
+			<pre><code><r>var</r> userType = new <y>GraphQLObjectType</y>({
+ 	<st>name:</st> 'user',
+ 	<st>description:</st> 'this is the user type',
+ 	<st>fields:</st> {
+   	  'name': {type: GraphQLString},
+   	  'age': {type: GraphQLInt}
+ 	}
+});
+</code></pre>
 	  </div>
 	</div>
 </div>
 <div class="row">
 	<div class='col-lg-12'>
-		<p id='cen'>A Nala Schema Page</p>
+		<p id='cen'>Example Nala Component</p>
 		<div class="box">
-	    <code>let userType = new GraphQLObjectType({<br/>
- 						name: 'user',<br/>
- 						description: 'this is the user type',<br/>
- 						fields: {<br/>
-   					'name': {type: GraphQLString},<br/>
-   					'age': {type: GraphQLInt}<br/>
- 						}<br/>
-						});<br/>
-<br/>
-						//myComponent.js<br/>
-						//construct the query<br/>
-						var query = {<br/>
-   					'query' : `query<br/>
-              queryUser($name:String) {<br/>
-                 getUser(name: $name) {<br/>
-                         name<br/>
-                   age<br/>
-                 }<br/>
-             }`,<br/>
-   'variables': {'name': this.state.name}<br/>
+			<pre><code><r>var</r> query = {
+  'query' : `query
+              queryUser($name:String) {
+               getUser(name: $name) {
+                  name
+                  age
+               }
+             }`,
+  'variables': {'name': this.state.name}
 }<br/>
-//send it to graphql<br/>
-$.post('/graphql', query, function(response){<br/>
- console.dir(response.data);<br/>
-});<br/>
-		  </code>.
+//send it to graphql
+$.post('/graphql', query, function(response){
+ console.dir(response.data);
+});</code></pre>
 	  </div>
 	</div>
 </div>
