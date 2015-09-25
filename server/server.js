@@ -8,9 +8,19 @@ app.all('/', function(req, res, next) {
 	next();
 });
 
-app.get('/documentation', function (req, res){
+app.get('/getstarted', function (req, res){
  res.sendFile(path.join(__dirname, '/../client/index.html'));
 });
+app.get('/crud', function (req, res){
+ res.sendFile(path.join(__dirname, '/../client/index.html'));
+});
+app.get('/addrelations', function (req, res){
+ res.sendFile(path.join(__dirname, '/../client/index.html'));
+});
+app.get('/removerelations', function (req, res){
+ res.sendFile(path.join(__dirname, '/../client/index.html'));
+});
+
 
 app.use(express.static('client'));
 app.listen(process.env.PORT || 3000);

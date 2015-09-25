@@ -9,9 +9,21 @@
         url: '/',
         templateUrl: 'partials/home.html'
       })
-      .state('documentation', {
-        url: '/documentation',
-        templateUrl: 'partials/documentation.html'
+      .state('getstart', {
+        url: '/getstarted',
+        templateUrl: 'partials/getstart.html'
+      })
+      .state('crud', {
+        url: '/crud',
+        templateUrl: 'partials/crud.html'
+      })
+      .state('addrelations', {
+        url: '/addrelations',
+        templateUrl: 'partials/addrelations.html'
+      })
+      .state('remrelations', {
+        url: '/removerelations',
+        templateUrl: 'partials/remrelations.html'
       })
     $urlRouterProvider.otherwise('/');
     $locationProvider.html5Mode({

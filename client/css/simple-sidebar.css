@@ -2,52 +2,47 @@
     #6E6E6E gray
     #FF5A09 orange
     #F3843E peach
-    #FF9900 yelluh*/
+    #ffa70f yelluh*/
 body {
     background: #f5f5f5;
     font: verdana;
 }
+
 #wrapper {
-    padding-left: 0;
-    -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
-    transition: all 0.5s ease;
-}
+        padding-left: 235px;
+    }
 
 #sidebar-wrapper {
     z-index: 1000;
     position: fixed;
-    left: 150px;
-    width: 0;
+    left: 235px;
+    width: 235px;
     height: 100%;
-    margin-left: -150px;
+    margin-left: -235px;
     overflow-y: auto;
     background-color: #6E6E6E;
     background-image: url(nalaemblem.png);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: left bottom;
-    -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
-    transition: all 0.5s ease;
 }
 
 #page-content-wrapper {
     width: 100%;
     position: absolute;
-    padding: 15px;
+    
+    padding: 20px;
+    
 }
 
 /* Sidebar Styles */
 .sidebar-nav {
     position: absolute;
     top: 0;
-    width: 150px;
+    width: 100%;
     margin: 0;
     padding: 0;
-    color: #FF9900;
+    color: #ffa70f;
 }
 
 .sidebar-nav li {
@@ -68,11 +63,14 @@ body {
 }
 
 .sidebar-nav > .sidebar-brand {
-    height: 65px;
-    font-size: 18px;
-    line-height: 60px;
+    height: 55px;
+    font-size: 25px;
+    line-height: 45px;
 }
-
+.doclink {
+    color: #F3843E;
+    font-size: 20px;
+}
 .sidebar-nav > .sidebar-brand a:hover {
     background: #393939;
     color: #FF5A09;
@@ -82,25 +80,6 @@ body {
     margin: 20px 0 0 0;
     font-size: 20px;
 }
-
-
-
-@media(min-width:300px) {
-    #wrapper {
-        padding-left: 150px;
-    }
-
-    #wrapper.toggled {
-        padding-left: 0;
-    }
-
-    #sidebar-wrapper {
-        width: 150px;
-    }
-
-    #page-content-wrapper {
-        padding: 20px;
-        position: relative;
-    }
-
+.subnav{
+    list-style-type: none;
 }
