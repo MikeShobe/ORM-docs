@@ -47,7 +47,7 @@ app.<y>post</y>(<func>'/graphql'</func>, <y>graphQLHandler</y>);</code></pre>
   <func>'variables'</func> : {<func>'name'</func>: this.state.name}
 }<br/>
 //send it to graphql
-$.<y>post</y>(<func>'/graphql'</func>, query, <r>function</r>(response){
+$.<y>post</y>(<func>'/graphql'</func>, <y>query</y>, <r>function</r>(response){
  console.dir(response.data);
 });</code></pre>
 	  </div>
